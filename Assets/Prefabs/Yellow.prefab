@@ -236,9 +236,11 @@ GameObject:
   - component: {fileID: 2103669740576369675}
   - component: {fileID: 2110222807590200347}
   - component: {fileID: 2120111671923213813}
+  - component: {fileID: 1078132399733270550}
+  - component: {fileID: 5320147548730068670}
   m_Layer: 0
   m_Name: Yellow
-  m_TagString: Untagged
+  m_TagString: yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,7 +252,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106428100279915913}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -733.54, y: -201.4, z: 17.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -309,6 +311,38 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1078132399733270550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106428100279915913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd518fdf88810a4b95292d9a2d5cac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainManager: {fileID: 0}
+  Speed: 50
+  Warp: 1
+  Cargo: 50
+  Shield: 50
+  Hull: 50
+  Damage: 5
+--- !u!65 &5320147548730068670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106428100279915913}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.945585, y: 1.4957154, z: 13.117718}
+  m_Center: {x: 0, y: -0.000007659196, z: -2.2826185e-13}
 --- !u!1 &2213420448708193721
 GameObject:
   m_ObjectHideFlags: 0
