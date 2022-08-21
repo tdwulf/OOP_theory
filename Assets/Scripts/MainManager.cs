@@ -23,31 +23,25 @@ public class MainManager : MonoBehaviour
     public void WasClicked(Ship clickedShip)
     {
         statPanel.SetActive(true);
+        SetLargeInactive();
 
         switch (clickedShip.tag)
         {
             case "blue":
-                Debug.Log("Clicked on " + clickedShip.tag);
-                SetLargeInactive();
                 SetShipActive(0);
-                UpdateStatView(clickedShip);
                 break;
 
             case "red":
-                Debug.Log("Clicked on " + clickedShip.tag);
-                SetLargeInactive();
                 SetShipActive(1);
-                UpdateStatView(clickedShip);
                 break;
 
             case "yellow":
-                Debug.Log("Clicked on " + clickedShip.tag);
-                SetLargeInactive();
                 SetShipActive(2);
-                UpdateStatView(clickedShip);
                 break;
 
         }
+
+        UpdateStatView(clickedShip);
     }
 
     private void SetLargeInactive()
